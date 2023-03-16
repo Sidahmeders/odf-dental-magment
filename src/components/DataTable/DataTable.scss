@@ -1,0 +1,57 @@
+.data-table-container {
+  position: relative;
+
+  .data-table {
+    .rdt_Table {
+      min-height: 25rem;
+    }
+
+    .rdt_TableBody {
+      max-height: 30rem;
+    }
+
+    .rdt_TableCell {
+      font-size: 1rem;
+    }
+  }
+
+  .data-table-counter {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    font-weight: bold;
+    padding: 1px 12px;
+    color: #474aff;
+    border: 2px solid #474aff;
+    font-size: 14px;
+    border-radius: 6px;
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.rdt_Pagination {
+  .sc-lllmON {
+    color: #474aff;
+    border: 2px solid #474aff;
+    border-radius: 6px;
+    padding-left: 10px;
+    margin-top: 1rem;
+
+    select {
+      outline-color: #474aff;
+    }
+    &::before {
+      content: 'lignes par page: ';
+    }
+  }
+
+  #pagination-first-page,
+  #pagination-previous-page,
+  #pagination-next-page,
+  #pagination-last-page,
+  .sc-bYMpWt {
+    display: none;
+  }
+}

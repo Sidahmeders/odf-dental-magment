@@ -1,0 +1,74 @@
+@mixin statusLayout {
+  padding: 5px 10px;
+  border-radius: 6px;
+  min-width: 65px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+@mixin statusCircle {
+  display: block;
+  border-radius: 50% !important;
+  min-width: unset !important;
+  width: 6px !important;
+  height: 6px !important;
+  padding: 6px !important;
+  margin: 1px;
+}
+
+.encours-circle {
+  @include statusCircle();
+  background-color: #7b30f3;
+}
+.collage-circle {
+  @include statusCircle();
+  background-color: #fc2727;
+}
+.debr-circle {
+  @include statusCircle();
+  background-color: #ceb237;
+}
+.fini-circle {
+  @include statusCircle();
+  background-color: #007a52;
+}
+
+.encours {
+  @include statusLayout();
+  background-color: #c274f07a;
+  color: #6201ff;
+}
+
+.collage {
+  @include statusLayout();
+  background-color: #f074747a;
+  color: #ff0101;
+}
+
+.debr {
+  @include statusLayout();
+  background-color: #ccdf227a;
+  color: #6b5b11;
+}
+
+.fini {
+  @include statusLayout();
+  background-color: #74f0cb7a;
+  color: #007a52;
+}
+
+.actions-cell {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.patient-page-container {
+  width: 90vw;
+  max-width: 65rem;
+  margin: 2.5rem;
+  margin-top: 6.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 1rem #dddd;
+}

@@ -1,0 +1,54 @@
+.pick-avatar-container {
+  border: 1px solid #dddd;
+  border-radius: 6px;
+  margin: 6px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 8rem;
+
+  .file-picker {
+    border: none;
+
+    label {
+      padding: 2px 0;
+      cursor: pointer;
+    }
+    input {
+      display: none;
+    }
+  }
+
+  .image-preview {
+    position: relative;
+    height: 4rem;
+
+    .stl-viewer,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .empty-file {
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      padding: 4px 0;
+    }
+
+    .action-buttons {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+
+      * {
+        padding: 4px;
+        background-color: #dddd;
+        cursor: pointer;
+      }
+    }
+  }
+}

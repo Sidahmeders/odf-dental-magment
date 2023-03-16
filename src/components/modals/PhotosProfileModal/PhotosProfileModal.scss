@@ -1,0 +1,42 @@
+.carousel {
+  .carousel-item img {
+    min-height: 75vh;
+    max-height: 75vh;
+    object-fit: contain;
+  }
+
+  .carousel-caption {
+    background-color: #474aff66;
+    padding: 6px 0;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    background-color: #474aff;
+    height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+    top: 45%;
+  }
+
+  .share-btn,
+  .download-btn {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    padding: 6px 12px;
+    background-color: #fff9;
+    cursor: pointer;
+  }
+
+  .share-btn {
+    right: 0;
+  }
+  .download-btn {
+    border-right: 2px solid white;
+
+    right: 3.5rem;
+  }
+}

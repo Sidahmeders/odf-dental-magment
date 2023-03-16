@@ -1,0 +1,35 @@
+.statistics-container {
+  margin-top: 6.5rem;
+
+  .statistics-charts {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .react-datepicker__input-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .react-datepicker__navigation {
+    background-color: #474aff;
+    span {
+      height: 1.25rem;
+    }
+  }
+
+  .react-datepicker__navigation--next {
+    border-radius: 0 50% 50% 0;
+  }
+  .react-datepicker__navigation--previous {
+    border-radius: 50% 0 0 50%;
+  }
+  .react-datepicker__month-container {
+    @media (max-width: 800px) {
+      float: none !important;
+    }
+  }
+}

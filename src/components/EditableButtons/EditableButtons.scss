@@ -1,0 +1,24 @@
+.editable-buttons-container {
+  .drag-wrapper {
+    background-color: #6c757d;
+    margin: 2px;
+    padding-bottom: 3px;
+    border-radius: 4px;
+    &.dragging {
+      opacity: 0.5;
+    }
+  }
+
+  .drop-zone {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    background: #f221;
+    color: #f119;
+    border: 1px dashed #f009;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+}

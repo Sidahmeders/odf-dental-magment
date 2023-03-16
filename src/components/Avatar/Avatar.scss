@@ -1,0 +1,23 @@
+.avatar-container {
+  cursor: pointer;
+  position: relative;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  input {
+    display: none;
+  }
+
+  .actions-buttons {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}

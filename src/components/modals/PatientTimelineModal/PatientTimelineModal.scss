@@ -1,0 +1,51 @@
+.vertical-timeline {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.vertical-timeline-element-date {
+  color: black;
+}
+
+.vertical-timeline-element-content {
+  padding-bottom: 0;
+
+  .creationDate,
+  .payment,
+  .total-payment {
+    margin: 0;
+  }
+
+  .payment,
+  .total-payment {
+    span {
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: orange;
+    }
+  }
+
+  .creationDate {
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dddd;
+  }
+
+  .description {
+    width: 100%;
+    background: inherit;
+    color: white;
+    outline: none;
+    border: none;
+  }
+}
+
+.title-select-box input {
+  height: 2.05rem;
+}
+
+@media print {
+  @page {
+    size: A5;
+  }
+}

@@ -1,0 +1,43 @@
+.create-profile-container,
+.edit-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .create-profile-form,
+  .edit-profile-form {
+    .required-field {
+      padding: 0 1rem;
+      font-size: 14px;
+      color: #d00;
+      background-color: white;
+      border: 2px solid red;
+    }
+  }
+}
+
+.radio-group-status {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .form-check {
+    min-width: 45%;
+    margin: 6px 0;
+  }
+}
+
+.urgent-switch {
+  font-size: 1.5rem;
+
+  .form-check-input:checked {
+    background-color: #d00;
+    border-color: #d00;
+  }
+
+  label {
+    font-size: 1.3rem;
+  }
+}
